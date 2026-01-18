@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>जनसुराज - एक नई सोच</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Yantramanav:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --brand-yellow: #FFD600;
+            --brand-black: #1a1a1a;
+            --paper-bg: #FFF9E5;
+            --text-dark: #2c2c2c;
+            --accent-color: #D32F2F;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Yantramanav', sans-serif;
+            background-color: var(--paper-bg);
+            /* Rich texture blend for poster feel */
+            background-image:
+                linear-gradient(to bottom, rgba(255, 249, 229, 0.9), rgba(255, 240, 208, 0.95)),
+                url('images/hero_bg.png');
+            background-size: cover;
+            background-attachment: fixed;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Merged Logo Header */
+        header {
+            padding: 30px 0 10px;
+            text-align: center;
+        }
+
+        .logo-img {
+            height: 160px;
+            /* Prominent Logo */
+            width: auto;
+            display: block;
+            margin: 0 auto;
+            mix-blend-mode: multiply;
+            /* Seamless blend */
+            filter: contrast(1.1);
+        }
+
+        /* Hero Type Section */
+        .hero {
+            text-align: center;
+            padding: 20px 0 50px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 900;
+            line-height: 1;
+            text-transform: uppercase;
+            color: var(--brand-black);
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 0px rgba(255, 214, 0, 0.3);
+        }
+
+        .hero h1 span {
+            color: #d6b400;
+            display: block;
+            font-size: 5rem;
+        }
+
+        .hero p {
+            font-size: 1.8rem;
+            font-weight: 600;
+            max-width: 800px;
+            margin: 0 auto;
+            color: var(--text-dark);
+            border-top: 3px solid var(--brand-black);
+            border-bottom: 3px solid var(--brand-black);
+            padding: 20px 0;
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Content Grid */
+        .qa-section {
+            padding: 40px 0;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+        }
+
+        .qa-card {
+            background: rgba(255, 255, 255, 0.6);
+            border: 2px solid var(--brand-black);
+            /* Rough poster look */
+            padding: 15px;
+            box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .qa-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 12px 12px 0px rgba(0, 0, 0, 0.15);
+            background: #fff;
+        }
+
+        .qa-card-img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            border: 2px solid var(--brand-black);
+            margin-bottom: 15px;
+            filter: sepia(0.15) contrast(1.1);
+        }
+
+        .qa-content h3 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            color: var(--brand-black);
+            border-bottom: 4px solid var(--brand-yellow);
+            display: inline-block;
+        }
+
+        .qa-content p {
+            font-size: 1.25rem;
+            font-weight: 500;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--brand-black);
+            color: var(--brand-yellow);
+            text-align: center;
+            padding: 40px 0;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-top: 50px;
+            border-top: 8px solid var(--brand-yellow);
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .hero h1 span {
+                font-size: 3.5rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .logo-img {
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <img src="images/logo.png" alt="Jan Suraaj" class="logo-img">
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>जनसुराज कोई पार्टी नहीं,<br><span>एक नई सोच है।</span></h1>
+            <p>"राजनीति पहचान की नहीं, इंसाफ़ की हो। <br>सत्ता की नहीं, जवाबदेही की हो।"</p>
+        </div>
+    </section>
+
+    <!-- Revolutionary "What is Jan Suraaj" Section -->
+    <section class="revolutionary-section"
+        style="background: var(--brand-black); color: var(--brand-yellow); padding: 80px 0; position: relative; overflow: hidden;">
+        <!-- Background Elements for 'Andolankari' Vibe -->
+        <div
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('images/hero_bg.png'); opacity: 0.1; mix-blend-mode: overlay;">
+        </div>
+
+        <div class="container" style="position: relative; z-index: 2;">
+            <h2
+                style="font-size: 3.5rem; text-transform: uppercase; margin-bottom: 50px; text-align: center; border-bottom: 3px solid var(--brand-yellow); display: inline-block; padding-bottom: 10px;">
+                जनसुराज: एक क्रांति</h2>
+
+            <div class="rev-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;">
+
+                <!-- Definition -->
+                <div class="rev-content">
+                    <h3
+                        style="font-size: 2rem; margin-bottom: 20px; color: #fff; background: var(--accent-color); display: inline-block; padding: 5px 15px; transform: skewX(-10deg);">
+                        जनसुराज क्या है?</h3>
+                    <p
+                        style="font-size: 1.2rem; line-height: 1.8; color: #eee; text-align: justify; border-left: 4px solid var(--brand-yellow); padding-left: 20px;">
+                        जनसुराज बिहार में शुरू हुआ एक <strong>जन-आंदोलन</strong> है, जिसे बाद में राजनीतिक पार्टी का रूप
+                        दिया गया। इसकी पहल <strong>प्रशांत किशोर</strong> ने की। इसका उद्देश्य जाति, धर्म और परिवारवाद
+                        की राजनीति से हटकर सुशासन, शिक्षा, रोजगार और गरिमापूर्ण जीवन को राजनीति के केंद्र में लाना है।
+                        यह सत्ता की नहीं, <strong>व्यवस्था बदलने</strong> की लड़ाई है।
+                    </p>
+                </div>
+
+                <!-- Why Needed (The Problem) -->
+                <div class="rev-content">
+                    <h3
+                        style="font-size: 2rem; margin-bottom: 20px; color: var(--brand-black); background: var(--brand-yellow); display: inline-block; padding: 5px 15px; transform: skewX(-10deg);">
+                        बिहार के लिए क्यों ज़रूरी?</h3>
+                    <p
+                        style="font-size: 1.2rem; line-height: 1.8; color: #eee; text-align: justify; border-left: 4px solid var(--accent-color); padding-left: 20px;">
+                        पिछले 3 दशकों से बिहार <strong>राजनीतिक अस्थिरता</strong> (Political Instability) और
+                        <strong>परिवारवाद</strong> की जकड़ में है। बिहार को अपने गौरवशाली इतिहास के बावजूद <strong>जाति
+                            और धर्म की राजनीति</strong> ने भारत का सबसे गरीब और पिछड़ा राज्य बना दिया।
+                        <br><br>
+                        जनता 'विकल्प के अभाव' में एक डर के चक्र में फँसी रही—<strong>लालू के डर से नीतीश को, और
+                            नीतीश-मोदी के डर से लालू को</strong>। यह लोकतंत्र नहीं, बल्कि एक तरह की <strong>राजनीतिक
+                            बंधुआ मजदूरी</strong> थी।
+                    </p>
+                </div>
+
+                <!-- The Alternative (Full Width) -->
+                <div class="rev-content"
+                    style="grid-column: 1 / -1; background: rgba(255, 255, 255, 0.05); padding: 30px; border: 2px dashed var(--brand-yellow);">
+                    <h3 style="font-size: 2.5rem; margin-bottom: 20px; color: var(--brand-yellow); text-align: center;">
+                        एक उम्मीद, एक विकल्प</h3>
+                    <div
+                        style="column-count: 2; column-gap: 40px; font-size: 1.2rem; color: #ddd; text-align: justify;">
+                        <p>
+                            इस निराशा के बीच जनसुराज एक उम्मीद बनकर उभरा। पश्चिम चंपारण के <strong>भितिहरवा गांधी
+                                आश्रम</strong> से शुरू हुआ यह अभियान एक पदयात्रा के रूप में गाँव-गाँव पहुँचा। यह यात्रा
+                            <strong>महात्मा गांधी</strong> के आदर्शों और <strong>बाबा साहेब अंबेडकर</strong> द्वारा उठाए
+                            गए सामाजिक-आर्थिक सवालों से प्रेरित थी।
+                        </p>
+                        <p>
+                            सत्ता में न रहते हुए भी जनसुराज ने जनता के मुद्दों को केंद्र में ला खड़ा किया। उदाहरण के लिए,
+                            2005 के बाद से जो <strong>बुजुर्ग पेंशन 400 रुपये</strong> पर अटकी थी, प्रशांत किशोर के
+                            बार-बार बोलने और दबाव बनाने पर सरकार को उसे बढ़ाकर <strong>1,100 रुपये</strong> करना पड़ा। यह
+                            साबित करता है कि सही नीयत हो तो विपक्ष भी बदलाव ला सकता है।
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision / Manifesto Section (Now with Yellow Highlights) -->
+    <section class="vision-section"
+        style="background: var(--brand-yellow); padding: 80px 0; border-bottom: 2px solid #000;">
+        <div class="container">
+            <div class="section-title" style="text-align: center; margin-bottom: 50px;">
+                <h2
+                    style="font-size: 3.5rem; color: var(--brand-black); text-transform: uppercase; font-weight: 900; line-height: 1.2;">
+                    जन सुराज आएगा <br><span style="color: #fff; text-shadow: 2px 2px 0 #000;">5 चीज हो जाएगा</span></h2>
+                <div style="width: 150px; height: 6px; background: #000; margin: 20px auto;"></div>
+            </div>
+
+            <div class="vision-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+
+                <!-- 1. Migration/Jobs -->
+                <div class="vision-item"
+                    style="background: var(--brand-black); padding: 30px; color: #fff; box-shadow: 15px 15px 0px rgba(0,0,0,0.2); border: 2px solid #fff;">
+                    <h3
+                        style="font-size: 1.6rem; color: var(--brand-yellow); margin-bottom: 15px; border-bottom: 1px dashed #777; padding-bottom: 10px;">
+                        01. युवाओं का पलायन बंद</h3>
+                    <p style="font-size: 1.2rem; line-height: 1.5;">एक साल के भीतर हर हाथ को काम। बिहार में ही
+                        <strong>10,000 से 15,000 रुपये</strong> के स्थानीय रोजगार की गारंटी, ताकि किसी को अपना घर छोड़कर
+                        बाहर न जाना पड़े।</p>
+                </div>
+
+                <!-- 2. Pension -->
+                <div class="vision-item"
+                    style="background: var(--brand-black); padding: 30px; color: #fff; box-shadow: 15px 15px 0px rgba(0,0,0,0.2); border: 2px solid #fff;">
+                    <h3
+                        style="font-size: 1.6rem; color: var(--brand-yellow); margin-bottom: 15px; border-bottom: 1px dashed #777; padding-bottom: 10px;">
+                        02. बुजुर्गों को ₹2000 पेंशन</h3>
+                    <p style="font-size: 1.2rem; line-height: 1.5;"><strong>60 वर्ष से ऊपर</strong> के हर महिला-पुरुष को
+                        प्रतिमाह <strong>₹2000 की पेंशन</strong>। यह 'भीख' नहीं, उनका 'हक' है, जो दिसंबर 2025 से मिलना
+                        शुरू होगा।</p>
+                </div>
+
+                <!-- 3. Education -->
+                <div class="vision-item"
+                    style="background: var(--brand-black); padding: 30px; color: #fff; box-shadow: 15px 15px 0px rgba(0,0,0,0.2); border: 2px solid #fff;">
+                    <h3
+                        style="font-size: 1.6rem; color: var(--brand-yellow); margin-bottom: 15px; border-bottom: 1px dashed #777; padding-bottom: 10px;">
+                        03. बच्चों के लिए विश्वस्तरीय शिक्षा</h3>
+                    <p style="font-size: 1.2rem; line-height: 1.5;">15 साल तक के हर गरीब बच्चे के लिए मुफ्त
+                        <strong>बेहतर शिक्षा</strong> की व्यवस्था। सरकारी स्कूल सुधरने तक, निजी स्कूलों की फीस सरकार
+                        देगी।</p>
+                </div>
+
+                <!-- 4. Women Loans -->
+                <div class="vision-item"
+                    style="background: var(--brand-black); padding: 30px; color: #fff; box-shadow: 15px 15px 0px rgba(0,0,0,0.2); border: 2px solid #fff;">
+                    <h3
+                        style="font-size: 1.6rem; color: var(--brand-yellow); margin-bottom: 15px; border-bottom: 1px dashed #777; padding-bottom: 10px;">
+                        04. महिलाओं को सस्ता ऋण</h3>
+                    <p style="font-size: 1.2rem; line-height: 1.5;">सरकारी गारंटी पर महिलाओं को व्यवसाय करने के लिए
+                        <strong>4% सालाना ब्याज</strong> पर पैसा मिलेगा, ताकि वे घर बैठे अपनी कमाई शुरू कर सकें।</p>
+                </div>
+
+                <!-- 5. Farmers -->
+                <div class="vision-item"
+                    style="background: var(--brand-black); padding: 30px; color: #fff; box-shadow: 15px 15px 0px rgba(0,0,0,0.2); border: 2px solid #fff;">
+                    <h3
+                        style="font-size: 1.6rem; color: var(--brand-yellow); margin-bottom: 15px; border-bottom: 1px dashed #777; padding-bottom: 10px;">
+                        05. किसानों को खेती से बेहतर कमाई</h3>
+                    <p style="font-size: 1.2rem; line-height: 1.5;">नकदी फसलों (फल, सब्जी) की खेती करने वाले किसानों के
+                        लिए <strong>मजदूरों की मुफ्त व्यवस्था</strong> (मनरेगा के तहत) और फसल का उचित दाम।</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Stories Grid (Detailed) -->
+    <section class="qa-section">
+        <div class="container">
+            <div class="portfolio-grid">
+
+                <!-- Pension Story -->
+                <div class="qa-card">
+                    <img src="images/justice.png" alt="Jan Suraaj Pension Impact" class="qa-card-img">
+                    <div class="qa-content">
+                        <h3>पेंशन: संघर्ष से समाधान तक</h3>
+                        <p><strong>समस्या:</strong> दशकों से बिहार के बुजुर्ग मात्र 400 रुपये की पेंशन पर आश्रित थे। यह
+                            राशि महंगाई के इस दौर में एक मजाक बनकर रह गई थी। सरकारें आईं और गईं, लेकिन किसी ने इस दर्द
+                            को नहीं समझा।</p>
+                        <br>
+                        <p><strong>जनसुराज का प्रभाव:</strong> प्रशांत किशोर ने अपनी पदयात्रा के दौरान हर गाँव, हर
+                            पंचायत में इस मुद्दे को उठाया। उन्होंने साफ कहा कि यह 'भीख' नहीं, बुजुर्गों का 'हक' है।
+                            जनसुराज के लगातार दबाव के कारण <strong>1,100 रुपये</strong> पेंशन हुई।</p>
+                    </div>
+                </div>
+
+                <!-- Student/SIT Story -->
+                <div class="qa-card">
+                    <img src="images/students_justice.png" alt="Justice for Students" class="qa-card-img">
+                    <div class="qa-content">
+                        <h3>न्याय: डर के खिलाफ आवाज</h3>
+                        <p><strong>घटना:</strong> NEET छात्रा के साथ हुए जघन्य अपराध पर जब पूरा तंत्र चुप था, तब जनसुराज
+                            आगे आया।</p>
+                        <br>
+                        <p><strong>हस्तक्षेप:</strong> प्रशांत किशोर के पीड़ित परिवार से मिलने और प्रशासन को चुनौती देने
+                            के बाद ही सरकार को <strong>SIT</strong> का गठन करना पड़ा। यह साबित करता है कि विपक्ष अगर
+                            मजबूत हो तो न्याय मिलता है।</p>
+                    </div>
+                </div>
+
+                <!-- Electricity Story -->
+                <div class="qa-card">
+                    <img src="images/voice.png" alt="Smart Meter Issue" class="qa-card-img">
+                    <div class="qa-content">
+                        <h3>बिजली: स्मार्ट मीटर की लूट</h3>
+                        <p><strong>मुद्दा:</strong> स्मार्ट मीटर के नाम पर बिहार में चल रही लूट और जबरन कनेक्शन काटने की
+                            धमकी के खिलाफ जनसुराज ने आवाज उठाई।</p>
+                        <br>
+                        <p><strong>जीत:</strong> इस जन-आंदोलन के डर से सरकार को अंततः <strong>125 यूनिट मुफ्त
+                                बिजली</strong> की घोषणा करनी पड़ी। यह जनता की एकजुटता की जीत है।</p>
+                    </div>
+                </div>
+
+                <!-- Migration Story -->
+                <div class="qa-card">
+                    <img src="images/bad_condition.png" alt="Migration Crisis" class="qa-card-img">
+                    <div class="qa-content">
+                        <h3>पलायन: नासूर बनता घाव</h3>
+                        <p><strong>हकीकत:</strong> 10 लाख+ लोग हर साल घर छोड़ते हैं। 30 साल में 3 करोड़ लोग बाहर गए। यह
+                            बिहार की प्रतिभा का पलायन है।</p>
+                        <br>
+                        <p><strong>संकल्प:</strong> 2025 में पहली बार <strong>'पलायन'</strong> जाति-धर्म से बड़ा चुनावी
+                            मुद्दा है। हम ऐसी व्यवस्था बनाएंगे कि पलायन "मजबूरी" नहीं, "मर्जी" हो।</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; जनसुराज | बिहार के भविष्य के लिए एक सोच</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
