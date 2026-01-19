@@ -157,18 +157,86 @@
             border-top: 8px solid var(--brand-yellow);
         }
 
-        /* Mobile */
+        /* Mobile Responsive Design */
         @media (max-width: 768px) {
-            .hero h1 span {
-                font-size: 3.5rem;
+
+            /* Global Adjustments */
+            .container {
+                padding: 0 15px;
             }
 
+            /* Header & Logo */
+            .logo-img {
+                height: 100px;
+            }
+
+            /* Hero Typography */
             .hero h1 {
                 font-size: 2.5rem;
             }
 
-            .logo-img {
-                height: 120px;
+            .hero h1 span {
+                font-size: 3.5rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+                padding: 15px;
+            }
+
+            /* Revolution Section Stacking */
+            .revolutionary-section {
+                padding: 50px 0 !important;
+            }
+
+            .revolutionary-section h2 {
+                font-size: 2.2rem !important;
+            }
+
+            .rev-grid {
+                grid-template-columns: 1fr !important;
+                gap: 40px !important;
+            }
+
+            /* Reset column count for "Alternative" text */
+            .rev-content div[style*="column-count"] {
+                column-count: 1 !important;
+            }
+
+            /* Vision / 5 Promises Stacking */
+            .vision-section h2 {
+                font-size: 2.2rem !important;
+            }
+
+            .vision-section .section-title span {
+                font-size: 2.5rem !important;
+                /* "5 cheez ho jayega" size */
+            }
+
+            .vision-grid {
+                grid-template-columns: 1fr !important;
+                gap: 20px !important;
+            }
+
+            /* Impact Stories Stacking */
+            .portfolio-grid {
+                grid-template-columns: 1fr !important;
+                gap: 30px !important;
+            }
+
+            .qa-card-img {
+                height: 200px;
+            }
+        }
+
+        /* Small Mobile Devices */
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero h1 span {
+                font-size: 2.8rem;
             }
         }
     </style>
@@ -283,7 +351,8 @@
                         01. युवाओं का पलायन बंद</h3>
                     <p style="font-size: 1.2rem; line-height: 1.5;">एक साल के भीतर हर हाथ को काम। बिहार में ही
                         <strong>10,000 से 15,000 रुपये</strong> के स्थानीय रोजगार की गारंटी, ताकि किसी को अपना घर छोड़कर
-                        बाहर न जाना पड़े।</p>
+                        बाहर न जाना पड़े।
+                    </p>
                 </div>
 
                 <!-- 2. Pension -->
@@ -305,7 +374,8 @@
                         03. बच्चों के लिए विश्वस्तरीय शिक्षा</h3>
                     <p style="font-size: 1.2rem; line-height: 1.5;">15 साल तक के हर गरीब बच्चे के लिए मुफ्त
                         <strong>बेहतर शिक्षा</strong> की व्यवस्था। सरकारी स्कूल सुधरने तक, निजी स्कूलों की फीस सरकार
-                        देगी।</p>
+                        देगी।
+                    </p>
                 </div>
 
                 <!-- 4. Women Loans -->
@@ -315,7 +385,8 @@
                         style="font-size: 1.6rem; color: var(--brand-yellow); margin-bottom: 15px; border-bottom: 1px dashed #777; padding-bottom: 10px;">
                         04. महिलाओं को सस्ता ऋण</h3>
                     <p style="font-size: 1.2rem; line-height: 1.5;">सरकारी गारंटी पर महिलाओं को व्यवसाय करने के लिए
-                        <strong>4% सालाना ब्याज</strong> पर पैसा मिलेगा, ताकि वे घर बैठे अपनी कमाई शुरू कर सकें।</p>
+                        <strong>4% सालाना ब्याज</strong> पर पैसा मिलेगा, ताकि वे घर बैठे अपनी कमाई शुरू कर सकें।
+                    </p>
                 </div>
 
                 <!-- 5. Farmers -->
